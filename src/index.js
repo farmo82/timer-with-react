@@ -17,12 +17,10 @@ class App extends React.Component{  //this is component
   }
 }
 
-let elem = new App()
-
 const tick = ()=>{
 
   root.render(
-    elem.render()
+    <App/>
   );
 }
 
