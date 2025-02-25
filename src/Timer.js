@@ -14,7 +14,9 @@ class Timer extends React.Component{  //component
         time: new Date().toLocaleTimeString()
       }
     }
+
     componentDidMount(){  //یک بار اول کار میسازه
+        console.log("componentDidMount")
         interval = setInterval(()=>{ //interval برای تغییر state
             this.setState({
               time: new Date().toLocaleTimeString()
@@ -23,6 +25,7 @@ class Timer extends React.Component{  //component
     }
   
     render(){
+        console.log("render")
       return(
         <h2 className='timer'>
           It is {this.state.time}
