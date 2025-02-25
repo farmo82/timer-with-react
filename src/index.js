@@ -4,17 +4,17 @@ import ReactDOM from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-class Timer extends React.Component{
+class Timer extends React.Component{  //component
   render(){
     return(
-      <h2>
+      <h2 className='timer'>
         It is {new Date().toLocaleTimeString()}
       </h2>
     )
   }
 }
 
-class Text extends React.Component{
+class Text extends React.Component{  //component
   render(){
     return(
       <h1>hello timer</h1>
@@ -22,12 +22,13 @@ class Text extends React.Component{
   }
 }
 
-class App extends React.Component{  //this is component
+class App extends React.Component{  //component
   render(){
     return(
+      // * class --> className
       // حتما باید یک تگ باز و بسته باشد. میتواند تگ بی نام باشد
-      <div>  
-        <Text/>
+      <div className='main'>  
+        <Text/> 
         <Timer/>
       </div>
 
