@@ -23,6 +23,14 @@ class Timer extends React.Component{  //component
             })
           }, 1000)
     }
+
+    componentDidUpdate(){
+        console.log("componentDidUpdate")
+    }
+
+    componentWillUnmount(){
+        
+    }
   
     render(){
         console.log("render")
